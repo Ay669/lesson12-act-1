@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning in css</title>
+    <style>
+        div{
+            right:  30px;
+            border:  3px solid red;
+            background-color: blue;
+        }
+
+        div.absolute{
+            position: absolute;
+            left: 55%;
+            border: 5px dashed rgb(145, 145, 233);
+            background-color: antiquewhite;
+        }
+
+        div.relative{
+            position: relative;
+            right: 44%;
+            border: 5px ridge rgb(145, 145, 233);
+            background-color: rgb(196, 120, 22);
+            height: 50px;
+        }
+        div.fixed{
+            position: fixed;
+            left: 45px;
+            border: 5px dotted rgb(57, 57, 221);
+            background-color: rgb(15, 126, 33);
+            height: 45px;
+        }
+
+        div.sticky{
+            position: sticky;
+            top: 0%;
+            border: 5px solid rgb(12, 189, 71);
+            background-color: rgb(202, 18, 18);
+            width: 45px;
+
+        }
+
+    </style>
+</head>
+<body style="background-color: aqua;">
+    <h2>positioning</h2>
+    <div>
+        Div with no position property
+    </div>
+
+    <div class="sticky">
+        div with sticky position porperty
+    </div>
+
+    <div class="relative">
+        div element has position relative
+        <div class="absolute">
+            absolute class div
+        </div>
+    </div>
+
+    <div class="fixed">
+        div with fixed position property
+    </div>
+</body>
+</html>
